@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Components/Header/Header.jsx";
+import Navbar from "./Components/Navbar/Navbar.jsx";
+import About from "./Components/About me/Aboutme.jsx";
+import Experience from "./Components/Experience/Experience.jsx";
+import Contact from "./Components/Experience/Experience.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
+import Latest from "./Components/Latest News/Latest.jsx";
+import Testimonials from "./Components/Testimonials/Testimonials.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Header />
+
+      {/*//line-height: 55%; making overlap errors*/}
+
+      <About />
+      <Experience />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   );
 }
